@@ -23,11 +23,28 @@ button{
       display: flex;
       flex-direction: column;
 }
+.third{
+      display: none; 
+}
+.thirdA{
+      display: flex;
+      flex-direction: column;  
+}
+.four{
+      display: none; 
+}
+.fourA{
+      display: flex;
+      flex-direction: column; 
+}
 /*-----------------------*/
 .options{
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
+}
+.options button{
+      width: 40%;
 }
 .options2 button{
       display: block;
@@ -38,7 +55,22 @@ button{
       flex-wrap: wrap;
       gap: 10px;
 }
-.options button{
+.options3{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px; 
+}
+.options3 button{
+      display: block;
+      width: 40%;
+}
+.options4{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px; 
+}
+.options4 button{
+      display: block;
       width: 40%;
 }
 .question2{
@@ -47,6 +79,13 @@ button{
 .question3{
       display: none;
 }
+.question4{
+      display: none;
+}
+.question5{
+      display: none;
+}
+
 .ani{
       display: flex;
 }

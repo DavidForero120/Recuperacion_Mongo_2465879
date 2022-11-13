@@ -96,7 +96,45 @@ s4.addEventListener('click',()=>{
 })
 /*-----------------third question-------------------- */
 const question3 = document.getElementById('question3');
-
+const modal3 = document.getElementById('third');
+const close2 = document.getElementById('options3');
+const res3 = document.getElementById('respuesta3');
 question3.addEventListener('click',()=>{
-      modal2.classList.replace('secondA','second')
+      modal2.classList.replace('secondA','second');
+      modal3.classList.replace('third','thirdA');
+      
+});
+const t1 = document.getElementById('third1');
+t1.addEventListener('click',()=>{
+      close2.classList.replace('options3','ini');
+      res3.innerHTML="Respuesta Incorrecta";
+      question4.classList.add('ani') 
+})
+const t2 = document.getElementById('third2');
+t2.addEventListener('click',()=>{
+      close2.classList.replace('options3','ini');
+      puntos = puntos + 10;
+      console.log(puntos)
+      res3.innerHTML="Respuesta correcta"
+      question4.classList.add('ani') 
+})
+const t3 = document.getElementById('third3');
+t3.addEventListener('click',()=>{
+      close2.classList.replace('options3','ini');
+      res3.innerHTML="Respuesta Incorrecta"
+      question4.classList.add('ani') 
+})
+const t4 = document.getElementById('third4');
+t4.addEventListener('click',()=>{
+      close2.classList.replace('options3','ini');
+      res3.innerHTML="Respuesta Incorrecta"
+      question4.classList.add('ani') 
+})
+
+/*------------------four question-----------------*/
+const question4 = document.getElementById('question4');
+const modal4 = document.getElementById('four');
+question4.addEventListener('click', ()=>{
+      modal3.classList.replace('thirdA','third');
+      modal4.classList.replace('four','fourA');
 })
