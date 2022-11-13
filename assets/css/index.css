@@ -1,0 +1,57 @@
+button{
+      border-radius: 5px;
+}
+.container_{
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+}
+/*--------------------*/
+.first{
+      display: none;
+}
+.firstA{
+      display: flex;
+      flex-direction: column;
+}
+.second{
+      display: none;  
+}
+.secondA {
+      display: flex;
+      flex-direction: column;
+}
+/*-----------------------*/
+.options{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+}
+.options2 button{
+      display: block;
+      width: 40%;
+}
+.options2{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+}
+.options button{
+      width: 40%;
+}
+.question2{
+      display: none;
+}
+.question3{
+      display: none;
+}
+.ani{
+      display: flex;
+}
+.ini{
+      display: none;
+}
+
+
