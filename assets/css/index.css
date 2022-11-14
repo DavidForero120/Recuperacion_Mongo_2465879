@@ -37,6 +37,13 @@ button{
       display: flex;
       flex-direction: column; 
 }
+.five{
+      display: none;
+}
+.fiveA{
+      display: flex;
+      flex-direction: column;   
+}
 /*-----------------------*/
 .options{
       display: flex;
@@ -73,6 +80,15 @@ button{
       display: block;
       width: 40%;
 }
+.options5{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px; 
+}
+.options5 button{
+      display: block;
+      width: 40%;
+}
 .question2{
       display: none;
 }
@@ -83,6 +99,9 @@ button{
       display: none;
 }
 .question5{
+      display: none;
+}
+.question6{
       display: none;
 }
 

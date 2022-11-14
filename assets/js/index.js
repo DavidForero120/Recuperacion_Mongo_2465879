@@ -134,7 +134,79 @@ t4.addEventListener('click',()=>{
 /*------------------four question-----------------*/
 const question4 = document.getElementById('question4');
 const modal4 = document.getElementById('four');
+const close3 = document.getElementById('options4');
+const res4 = document.getElementById('respuesta4');
 question4.addEventListener('click', ()=>{
       modal3.classList.replace('thirdA','third');
       modal4.classList.replace('four','fourA');
+});
+const f1 = document.getElementById('four1');
+f1.addEventListener('click',()=>{
+      close3.classList.replace('options4','ini');
+      question5.classList.replace('question5', 'ani');
+      res4.innerHTML="Respuesta incorrecta";
+})
+const f2 = document.getElementById('four2');
+f2.addEventListener('click',()=>{
+      close3.classList.replace('options4','ini');
+      question5.classList.replace('question5', 'ani');
+      res4.innerHTML="Respuesta incorrecta";
+      
+})
+const f3 = document.getElementById('four3');
+f3.addEventListener('click',()=>{
+      close3.classList.replace('options4','ini');
+      question5.classList.replace('question5', 'ani');
+      res4.innerHTML="Respuesta incorrecta";
+})
+const f4 = document.getElementById('four4');
+f4.addEventListener('click',()=>{
+      puntos = puntos + 10;
+      close3.classList.replace('options4','ini');
+      question5.classList.replace('question5', 'ani');
+      res4.innerHTML="Respuesta correcta";
+      console.log(puntos)
+});
+
+/*-------------five question----------------- */
+const question5 = document.getElementById('question5');
+const modal5 = document.getElementById('five');
+const options5 = document.getElementById('options5');
+const res5 = document.getElementById('respuesta6');
+question5.addEventListener('click',()=>{
+      modal4.classList.replace('fourA','four');
+      modal5.classList.replace('five','fiveA');
+});
+const fi1 = document.getElementById('five1');
+fi1.addEventListener('click',()=>{
+      options5.classList.replace('options5','ini');
+      res5.innerHTML="Respuest incorrecta";
+      question6.classList.replace('question6','ani');
+})
+const fi2 = document.getElementById('five2');
+fi2.addEventListener('click',()=>{
+      options5.classList.replace('options5','ini');
+      res5.innerHTML="Respuest incorrecta";
+      question6.classList.replace('question6','ani');
+})
+const fi3 = document.getElementById('five3');
+fi3.addEventListener('click',()=>{
+      puntos = puntos + 10;
+      console.log(puntos)
+      options5.classList.replace('options5','ini');
+      res5.innerHTML="Respuest correcta";
+      question6.classList.replace('question6','ani');
+      
+})
+const fi4 = document.getElementById('five4');
+fi4.addEventListener('click',()=>{
+      options5.classList.replace('options5','ini');
+      res5innerHTML="Respuest incorrecta";
+      question6.classList.replace('question6','ani');
+})
+
+/*-----------------pratica----------- */
+const question6 = document.getElementById('question6');
+question6.addEventListener('click',()=>{
+      alert(`lleva ${puntos} puntos`);
 })
