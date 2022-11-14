@@ -1,0 +1,44 @@
+body{
+    background: url(../img/fondoMongo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.botones{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 25%;
+    margin: 4rem auto auto auto;
+}
+
+button.btn{
+    margin-top: 9.5rem;
+    margin-left: 0.5rem;
+}
+
+input.form-control{
+    margin-top: -5rem;
+}
+
+.titulo{
+    text-align: center;
+    color:rgb(44, 199, 91);
+    margin-top: 10rem;
+    font-family: 'Merriweather', serif;
+
+}
+
+@media screen and (min-width: 200px) and (max-width: 768px) {
+    .botones{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 56%;
+        margin: 4rem auto auto auto;
+    }
+
+    button.btn{
+        margin-top: 1.5rem;
+        margin-left: 0.5rem;
+    }
+}
