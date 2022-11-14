@@ -1,0 +1,56 @@
+body {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/fondoCon.jpeg);
+}
+
+.form-group{
+    margin: 1rem;
+}
+
+nav{
+    display: flex;
+    background-color: #fff;
+    box-shadow: 1px -12px 22px 3px rgba(138,134,138,1);
+    padding: 0.5rem;
+}
+
+nav img{
+    width: 12%;
+    display: flex;
+    margin: auto;
+}
+
+.contenido{
+    margin: auto;
+    /* margin-left: 11rem; */
+    width: 78%;
+}
+
+h1{
+    margin-top: 2rem;
+    font-family: 'Merriweather', serif;
+    font-size: 30px;
+    margin-bottom: 1rem;
+}
+
+a{
+    text-decoration: none;
+    margin-left: 1rem;
+    color: rgb(19, 165, 63);
+}
+
+a:hover{
+    color:rgb(13, 127, 47);
+}
+
+select.form-control{
+    border-radius: 16px;
+}
+
+select.form-control:focus{
+    border-color:rgb(37, 184, 81) ;
+    box-shadow: -1px -1px 6px -2px rgb(78, 210, 118);
+
+}
