@@ -23,21 +23,28 @@
     <div class="contenido">
   
     <form>
+
+        <!--Primera Pregunta-->
         <div class="form-group">
             <h1>PRUEBA DE CONOCIMIENTO</h1>
             <label>¿Qué compone un grafo?</label><br>
-            <select class="form-control" id="grafo">
+
+            <select class="form-control" id="grafo" name="grafo">
                 <option value="0">Seleccione una opción</option>
                 <option value="1">Nodos y aristas</option>
                 <option value="2">Atomos y aristas</option>
                 <option value="3">Propiedad y colección</option>
                 <option value="4">Todas las anteriores</option>
                 </select>   
+
         </div>
 
+
+        <!--Segunda Pregunta-->
         <div class="form-group">
             <label>¿En las bases de datos NOSQL qué es Redis?</label><br>
-            <select class="form-control">
+
+            <select class="form-control" id="second" name="second">
                 <option value="0">Seleccione una opcion</option>
                 <option value="1">Es un framework de trabajo de MongoDB.</option>
                 <option value="2">Es una base de datos no relacional ampliamente utilizada para hacer caché.</option>
@@ -46,9 +53,13 @@
             </select>
         </div>
 
+        <!--Tercera Pregunta-->
+
         <div class="form-group">
             <label>En los tipos de bases de datos, la familia de columnas sirve para:</label><br>
-            <select id="datebd" class="form-control">
+
+
+            <select id="datebd" class="form-control"name="bd">
                 <option value="0">Seleccione una opcion</option>
                 <option value="1">guardar datos en grupos.</option>
                 <option value="2">tener un identificador único en cada documento.</option>
@@ -57,8 +68,10 @@
             </select>
         </div>
 
+        <!--Cuarta Pregunta-->
         <div class="form-group">
             <label>¿Cuales son los componentes de Mongodb?</label><br>
+
             <select id="componentes" class="form-control">
                 <option value="0">Seleccione una opcion</option>
                 <option value="1">Base de datos</option>
@@ -69,11 +82,14 @@
             </select>
         </div>
 
+        <!--Quinta Pregunta-->
+
         <div class="form-group">
             <label>En las bases de datos relacionales están las: Tablas, Filas, Columnas y Clave principal
                 entre otros; En bases de datos
                 no relacionales a que se asemejan estos términos</label><br>
-            <select id="bdnor" class="form-control">
+
+            <select id="bdnor" class="form-control" >
                 <option value="0">Seleccione una opcion</option>
                 <option value="1">Documentos, Filas, primary key, campos. </option>
                 <option value="2">Colecciones, Campos, id, valores.</option>
@@ -83,12 +99,16 @@
            
         </div>
         <div class="form-group">
-            <button type="submit" class="btn btn-success">Responder</button>
+            <button class="btn btn-success" id="responder">Responder</button>
         </div>
 
        
     </form>
+
 </div>
+
+<script src="js/validator.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>
