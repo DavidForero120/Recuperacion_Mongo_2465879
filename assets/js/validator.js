@@ -161,10 +161,10 @@ boton.addEventListener('click', ()=>{
     puntaje = puntaje1+puntaje2+puntaje3+puntaje4+puntaje5+puntaje6+puntaje7+puntaje8+puntaje9+puntaje10;
     if(puntaje >= 70){
 
-        Swal.fire({ text:`Pasaste ya que tu nota fue de ${puntaje}`,icon:'success'})
+        swal({ text:`Pasaste ya que tu nota fue de ${puntaje}`,icon:'success'})
     }else{
 
-        Swal.fire({ text:`perdiste ya que tu nota fue de ${puntaje}`,icon:'error'})
+        swal({ text:`perdiste ya que tu nota fue de ${puntaje}`,icon:'error'})
     
     }
     
