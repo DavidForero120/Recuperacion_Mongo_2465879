@@ -1,18 +1,14 @@
-body {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url(../img/fondoCon.jpeg);
-}
+
 
 .form-group{
     margin: 1rem;
 }
 
+
 nav{
     display: flex;
     background-color: #fff;
-    box-shadow: 1px -12px 22px 3px rgba(138,134,138,1);
+    box-shadow: 1px -12px 22px 3px rgb(77, 134, 111);
     padding: 0.5rem;
 }
 
@@ -25,24 +21,25 @@ nav img{
 .contenido{
     margin: auto;
     /* margin-left: 11rem; */
-    width: 78%;
+    width: 60%;
 }
 
 h1{
     margin-top: 2rem;
     font-family: 'Merriweather', serif;
     font-size: 30px;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    color: rgb(1, 66, 28);
 }
 
 a{
     text-decoration: none;
     margin-left: 1rem;
-    color: rgb(19, 165, 63);
+    color: rgb(19, 165, 109);
 }
 
 a:hover{
-    color:rgb(13, 127, 47);
+    color:rgb(13, 127, 74);
 }
 
 select.form-control{
@@ -50,7 +47,41 @@ select.form-control{
 }
 
 select.form-control:focus{
-    border-color:rgb(37, 184, 81) ;
-    box-shadow: -1px -1px 6px -2px rgb(78, 210, 118);
+    border-color:rgb(37, 184, 115) ;
+    box-shadow: -1px -1px 6px -2px rgb(78, 210, 137);
+    transform: translateY(-3px);
 
 }
+.wrap {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  .button {
+    width: 140px;
+    height: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: rgb(250, 250, 250);
+    background-color: rgb(20, 179, 92);
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    }
+  
+  .button:hover {
+    background-color: #ffffff;
+    box-shadow: 0px 15px 20px rgba(46, 229, 144, 0.4);
+    color: rgb(5, 0, 0);
+    transform: translateY(-7px);
+  }
