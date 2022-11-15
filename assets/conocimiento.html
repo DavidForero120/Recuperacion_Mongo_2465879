@@ -16,9 +16,10 @@
 </head>
 
 <body>
+    <!--Intentar no dejar espacion en la practica con operadores logicos-->
     <nav>
         <a href="../index.html">Volver</a>
-        <img src="../img/logo.png" alt="">
+        <img src="../img/" alt="">
     </nav>
     <div class="contenido">
   
@@ -101,52 +102,34 @@
 
         <h1>PRACTICA</h1>
         <div class="form-group">
-         
-            <label>Seleccione la sintaxis correcta para el operador or</label><br>
-            <select class="form-control" id="pr1">
-                <option value="0">Seleccione una opción</option>
-                <option value="1">db.coleccion.find({ $or[{ nombre: tatiana }] })</option>
-                <option value="2">db.coleccion.find({ $or[{ nombre: tatiana },{nombre: Andrés}] }) </option>
-                <option value="3"> db.coleccion.find({ [{ nombre: “tatiana” } $or {nombre: “Andrés”}] })</option>
-            </select>   
+            <label>1. Digite la sintaxis correcta para la coleccion "profes" donde el nombre sea tatiana o Andres:</label><br>
+            <input type="text" class="form-control" id="pr1">
+            <p id="con1"></p>
         </div>
 
         <div class="form-group">
-            <label> Seleccione la opción correcta para eliminar la base de datos llamada hospital </label><br>
-            <select class="form-control" id="pr2">
-                <option value="0">Seleccione una opcion</option>
-                <option value="1">db dropDatabase(“hospital”) </option>
-                <option value="2">Pasos 1. db.use(“hospital”) 2. db.drop.Database()</option>
-                <option value="3">dropDatabase(“hospital”)</option>
-                <option value="4">Pasos 1. use hospital 2. db.dropDatabase()</option>
-            </select>
+            <label>2. Si estamos usando la base de datos "perros", ¿Cuales serian los pasos para eliminar la base de datos "hospital"?: </label><br>
+            <p>Primer paso:</p>
+            <input type="text" class="form-control" id="pr2">
+            <p>Segundo paso:</p>
+            <input type="text" class="form-control" id="pr22">
+            <p id="con2"></p>
         </div>
 
         <div class="form-group">
-            <label> Se desea añadir el file titulo a la colección libro. Seleccione la opción correcta </label><br>
-            <select id="pr3" class="form-control">
-                <option value="0">Seleccione una opcion</option>
-                <option value="1">db.libro.insert({ titulo:el gato negro }) </option>
-                <option value="2">db.libro.update({ titulo:el gato negro })</option>
-                <option value="3">db.libro.update({ autor:”edgar allan poe” },{$set:{ titulo:”el gato negro” }},{ upset:true })</option>
-                <option value="4">db.libro.update({ autor:”edgar allan poe” },{$unset:{ titulo:”el gato negro” }})</option>
-            </select>
+            <label>3. Se desea añadir el file titulo con el valor "el gato negro" a la colección libro donde el _id:1. Seleccione la opción correcta: </label><br>
+            <input id="pr3" class="form-control">
+            <p id="con3"></p>
         </div>
 
         <div class="form-group">
-            <label>Se desea ordenar el file id de manera descendente. Seleccione la opción correcta</label><br>
-            <select id="pr4" class="form-control">
-                <option value="0">Seleccione una opcion</option>
-                <option value="1"> db.coleccion.find({ nombre: tatiana }).sort({id:1})</option>
-                <option value="2">db.coleccion.find({ edad:”18” }).sort({_id:-1}) </option>
-                <option value="3">db.coleccion.find( ).sort(id:1) </option>
-                <option value="4">db.coleccion.find( ).sort({_id:-1}) </option>
-            
-            </select>
+            <label>4. Se desea ordenar la coleccion "ficha" el file _id de manera descendente:</label><br>
+            <input id="pr4" class="form-control">    
+            <p id="con4"></p>       
         </div>
 
         <div class="form-group">
-            <label>La sintaxis correcta del método update () es:</label><br>
+            <label>5. La sintaxis correcta del método update () es:</label><br>
             <select id="pr5" class="form-control">
                 <option value="0">Seleccione una opcion</option>
                 <option value="1">db.update.collection({$set: {file:value}}, {file:value}) </option>
@@ -154,15 +137,17 @@
                 <option value="3">db.collectionname.update({file:value}, {$set: {file:value}}) </option>
                 <option value="4"> update({file:value}, {$set: {file:value}}.sort{file:-1})</option>
             </select>
+            <p id="con5"></p>
            
         </div>
         
-        <div class="wrap">
-            <button id="responder" class="button">Responder</button>
-          </div>
+        
 
        
     </form>
+    <div class="wrap">
+        <button id="responder" class="button">Responder</button>
+      </div>
 
 </div>
 

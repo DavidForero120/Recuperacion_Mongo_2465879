@@ -95,113 +95,75 @@ five.addEventListener('change', ()=>{
     console.log(`Opcion ${optionSelect.value}`);
 
     if(valorOption ==1){
-        console.log("ganaste")
         puntaje5= 10
-        console.log(puntaje)
+
     }else{
         console.log("Perdiste")
     }
 })
 
 //Practica
-
-const pr1 = document.querySelector('#pr1');
-const pr2 = document.querySelector('#pr2');
-const pr3 = document.querySelector('#pr3');
-const pr4 = document.querySelector('#pr4');
-const pr5 = document.querySelector('#pr5');
-
-pr1.addEventListener('change', ()=>{
-    let valorOption = pr1.value;
-    console.log(valorOption);
-
-    let optionSelect = pr1.options[pr1.selectedIndex];
-
-    console.log(`Opcion ${optionSelect.text}`);
-    console.log(`Opcion ${optionSelect.value}`);
-
-    if(valorOption ==2 ){
-        console.log("ganaste")
-        puntaje6= 10
-    }else{
-        console.log("Perdiste")
-    }
-})
-
-pr2.addEventListener('change', ()=>{
-    let valorOption = pr2.value;
-    console.log(valorOption);
-
-    let optionSelect = pr2.options[pr2.selectedIndex];
-
-    console.log(`Opcion ${optionSelect.text}`);
-    console.log(`Opcion ${optionSelect.value}`);
-
-    if(valorOption ==4){
-        console.log("ganaste")
-        puntaje7= 10
-    }else{
-        console.log("Perdiste")
-    }
-})
-
-pr3.addEventListener('change', ()=>{
-    let valorOption = pr3.value;
-    console.log(valorOption);
-
-    let optionSelect = pr3.options[pr3.selectedIndex];
-
-    console.log(`Opcion ${optionSelect.text}`);
-    console.log(`Opcion ${optionSelect.value}`);
-
-    if(valorOption ==3){
-        console.log("ganaste")
-        puntaje8= 10
-    }else{
-        console.log("Perdiste")
-    }
-})
-
-pr4.addEventListener('change', ()=>{
-    let valorOption = pr4.value;
-    console.log(valorOption);
-
-    let optionSelect = pr4.options[pr4.selectedIndex];
-
-    console.log(`Opcion ${optionSelect.text}`);
-    console.log(`Opcion ${optionSelect.value}`);
-
-    if(valorOption ==4){
-        console.log("ganaste")
-        puntaje9= 10
-    }else{
-        console.log("Perdiste")
-    }
-})
-
 pr5.addEventListener('change', ()=>{
     let valorOption = pr5.value;
     console.log(valorOption);
-
     let optionSelect = pr5.options[pr5.selectedIndex];
-
-    console.log(`Opcion ${optionSelect.text}`);
-    console.log(`Opcion ${optionSelect.value}`);
-
     if(valorOption == 3){
-        console.log("ganaste")
         puntaje10= 10
+        r5.innerHTML=""
     }else{
-        console.log("Perdiste")
+        r5.innerHTML="¡RESPUESTA INCORRECTA"
     }
 })
 
 const boton = document.getElementById('responder');
+let r = `db.profes.find({$or:[{nombre:"tatiana"},{nombre:"Andres"}]})`
+const r1 = document.getElementById('con1');
+const r2 = document.getElementById('con2');
+const r3 = document.getElementById('con3');
+const r4 = document.getElementById('con4');
+const r5 = document.getElementById('con5');
 
 boton.addEventListener('click', ()=>{
-
+    const pr1 = document.querySelector('#pr1').value;
+    const pr2 = document.querySelector('#pr2').value;
+    const pr22 = document.querySelector('#pr22').value;
+    const pr3 = document.querySelector('#pr3').value;
+    const pr4 = document.querySelector('#pr4').value;
+    
+    if(pr1 == r || pr1 ==`db.profes.find({$or: [{nombre:"tatiana"},{nombre:"Andres"}]})`|| pr1 ==`db.profes.find({$or: [{nombre: "tatiana"},{nombre: "Andres"}]})`){
+        puntaje6 = 10;
+        console.log("correcto1")
+        r1.innerHTML=""
+    }else{
+        r1.innerHTML="¡RESPUESTA INCORRECTA!"
+    }
+    if(pr2== `use hospital` && pr22 == `db.dropDatabase()`){
+        puntaje7 = 10;
+        console.log("correcto2");
+        r2.innerHTML=""
+    }else{
+        r2.innerHTML="¡RESPUESTA INCORRECTA!"
+    }
+    if(pr3 == `db.libro.update({ _id:1 },{$set:{ titulo:"el gato negro" }},{ upset:true })` || pr3 == `db.libro.update({_id: 1},{$set:{titulo:"el gato negro"}},{upset:true})` || pr3 ==`db.libro.update({ _id: 1 },{$set:{titulo: "el gato negro"}},{upset:true})`){
+        puntaje8 = 10;
+        console.log("correcto3")
+        r3.innerHTML=""
+    }else{
+        r3.innerHTML="¡RESPUESTA INCORRECTA!"
+    }
+    if(pr4 == `db.coleccion.find().sort({_id:-1})` || pr4 == `db.coleccion.find().sort({ _id:-1 })` || pr4 == `db.coleccion.find( ).sort({_id:-1})`){
+        puntaje9 = 10;
+        console.log("correcto4")
+        r4.innerHTML=""
+    }else{
+        r4.innerHTML="¡RESPUESTA INCORRECTA!"
+    }
     puntaje = puntaje1+puntaje2+puntaje3+puntaje4+puntaje5+puntaje6+puntaje7+puntaje8+puntaje9+puntaje10;
-    console.log(puntaje)
+    if(puntaje >= 70){
+        alert(`Pasaste ya que tu nota fue de ${puntaje}`)
+    }else{
+        alert(`perdiste ya que tu nota fue de ${puntaje}`)
+    }
     
 })
 
