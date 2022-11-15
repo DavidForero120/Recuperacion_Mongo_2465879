@@ -98,21 +98,22 @@
             </select>
            
         </div>
+
+        <h1>PRACTICA</h1>
         <div class="form-group">
          
             <label>Seleccione la sintaxis correcta para el operador or</label><br>
-            <select class="form-control" id="grafo">
+            <select class="form-control" id="pr1">
                 <option value="0">Seleccione una opción</option>
                 <option value="1">db.coleccion.find({ $or[{ nombre: tatiana }] })</option>
                 <option value="2">db.coleccion.find({ $or[{ nombre: tatiana },{nombre: Andrés}] }) </option>
                 <option value="3"> db.coleccion.find({ [{ nombre: “tatiana” } $or {nombre: “Andrés”}] })</option>
-                
-                </select>   
+            </select>   
         </div>
 
         <div class="form-group">
             <label> Seleccione la opción correcta para eliminar la base de datos llamada hospital </label><br>
-            <select class="form-control">
+            <select class="form-control" id="pr2">
                 <option value="0">Seleccione una opcion</option>
                 <option value="1">db dropDatabase(“hospital”) </option>
                 <option value="2">Pasos 1. db.use(“hospital”) 2. db.drop.Database()</option>
@@ -123,30 +124,30 @@
 
         <div class="form-group">
             <label> Se desea añadir el file titulo a la colección libro. Seleccione la opción correcta </label><br>
-            <select id="datebd" class="form-control">
+            <select id="pr3" class="form-control">
                 <option value="0">Seleccione una opcion</option>
                 <option value="1">db.libro.insert({ titulo:el gato negro }) </option>
                 <option value="2">db.libro.update({ titulo:el gato negro })</option>
-                <option value="3">db.libro.update({ autor:”edgar allan poe” },{$set:{ titulo:”el gato negro” }})</option>
+                <option value="3">db.libro.update({ autor:”edgar allan poe” },{$set:{ titulo:”el gato negro” }},{ upset:true })</option>
                 <option value="4">db.libro.update({ autor:”edgar allan poe” },{$unset:{ titulo:”el gato negro” }})</option>
             </select>
         </div>
 
         <div class="form-group">
             <label>Se desea ordenar el file id de manera descendente. Seleccione la opción correcta</label><br>
-            <select id="componentes" class="form-control">
+            <select id="pr4" class="form-control">
                 <option value="0">Seleccione una opcion</option>
-                <option value="1"> db.coleccion.find({ nombre: tatiana }).sort ({id:1})</option>
-                <option value="2">db.coleccion.find({ edad:”18” }).sort ({_id:-1}) </option>
-                <option value="3">db.coleccion.find( ).sort (id:1) </option>
-                <option value="4">db.coleccion.find( ).sort ({_id:-1}) </option>
+                <option value="1"> db.coleccion.find({ nombre: tatiana }).sort({id:1})</option>
+                <option value="2">db.coleccion.find({ edad:”18” }).sort({_id:-1}) </option>
+                <option value="3">db.coleccion.find( ).sort(id:1) </option>
+                <option value="4">db.coleccion.find( ).sort({_id:-1}) </option>
             
             </select>
         </div>
 
         <div class="form-group">
-            <label>La sintaxis correcta del método update () :</label><br>
-            <select id="bdnor" class="form-control">
+            <label>La sintaxis correcta del método update () es:</label><br>
+            <select id="pr5" class="form-control">
                 <option value="0">Seleccione una opcion</option>
                 <option value="1">db.update.collection({$set: {file:value}}, {file:value}) </option>
                 <option value="2">update({file:name_collection}) </option>
@@ -157,7 +158,7 @@
         </div>
         
         <div class="wrap">
-            <button id="responder"class="button">Responder</button>
+            <button id="responder" class="button">Responder</button>
           </div>
 
        

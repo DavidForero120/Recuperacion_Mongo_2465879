@@ -1,4 +1,4 @@
-//Primera pregunta
+//Prueba de Conocimiento
 
 const first = document.querySelector('#grafo');
 const second = document.querySelector('#second');
@@ -98,6 +98,99 @@ five.addEventListener('change', ()=>{
         console.log("ganaste")
         puntaje5= 10
         console.log(puntaje)
+    }else{
+        console.log("Perdiste")
+    }
+})
+
+//Practica
+
+const pr1 = document.querySelector('#pr1');
+const pr2 = document.querySelector('#pr2');
+const pr3 = document.querySelector('#pr3');
+const pr4 = document.querySelector('#pr4');
+const pr5 = document.querySelector('#pr5');
+
+pr1.addEventListener('change', ()=>{
+    let valorOption = pr1.value;
+    console.log(valorOption);
+
+    let optionSelect = pr1.options[pr1.selectedIndex];
+
+    console.log(`Opcion ${optionSelect.text}`);
+    console.log(`Opcion ${optionSelect.value}`);
+
+    if(valorOption ==2 ){
+        console.log("ganaste")
+        puntaje6= 10
+    }else{
+        console.log("Perdiste")
+    }
+})
+
+pr2.addEventListener('change', ()=>{
+    let valorOption = pr2.value;
+    console.log(valorOption);
+
+    let optionSelect = pr2.options[pr2.selectedIndex];
+
+    console.log(`Opcion ${optionSelect.text}`);
+    console.log(`Opcion ${optionSelect.value}`);
+
+    if(valorOption ==4){
+        console.log("ganaste")
+        puntaje7= 10
+    }else{
+        console.log("Perdiste")
+    }
+})
+
+pr3.addEventListener('change', ()=>{
+    let valorOption = pr3.value;
+    console.log(valorOption);
+
+    let optionSelect = pr3.options[pr3.selectedIndex];
+
+    console.log(`Opcion ${optionSelect.text}`);
+    console.log(`Opcion ${optionSelect.value}`);
+
+    if(valorOption ==3){
+        console.log("ganaste")
+        puntaje8= 10
+    }else{
+        console.log("Perdiste")
+    }
+})
+
+pr4.addEventListener('change', ()=>{
+    let valorOption = pr4.value;
+    console.log(valorOption);
+
+    let optionSelect = pr4.options[pr4.selectedIndex];
+
+    console.log(`Opcion ${optionSelect.text}`);
+    console.log(`Opcion ${optionSelect.value}`);
+
+    if(valorOption ==4){
+        console.log("ganaste")
+        puntaje9= 10
+    }else{
+        console.log("Perdiste")
+    }
+})
+
+pr5.addEventListener('change', ()=>{
+    let valorOption = pr5.value;
+    console.log(valorOption);
+
+    let optionSelect = pr5.options[pr5.selectedIndex];
+
+    console.log(`Opcion ${optionSelect.text}`);
+    console.log(`Opcion ${optionSelect.value}`);
+
+    if(valorOption == 3){
+        console.log("ganaste")
+        puntaje10= 10
     }else{
         console.log("Perdiste")
     }
